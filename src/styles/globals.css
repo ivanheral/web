@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+}
+
+.test {
+  background: url(../../public/images/fisioluxury/lepka.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.test2 {
+  background: url(../../public/images/fisioluxury/naranja.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.test3 {
+  background: url(../../public/images/fisioluxury/agnieszka.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.test4 {
+  background: url(../../public/images/fisioluxury/reportaje.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  max-width: 100%;
+  min-height: 1280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+a,
+button,
+a:focus,
+button:focus {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+body,
+html {
+  margin: 0px;
+}
+
+.section {
+  height: 50%;
+  color: #899eb5;
+  position: relative;
+}
+
+.scene {
+  height: 100%;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.text {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  font-size: 5rem;
+  color: gray;
+  transform: translateY(100%);
+}
+
+.viewer {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  width: 100%;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/doodle-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.xxx {
+  outline: 2px dashed gray;
+}
+
+.bgexample {
+  background-image: url('/images/background.jpg');
+}
+
+textarea {
+  resize: none;
+}
