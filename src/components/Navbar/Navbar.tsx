@@ -18,7 +18,7 @@ const NavBar = () => {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Activelink href="/" className="flex items-center justify-between space-x-2">
               <a>
-                <div className="hidden h-8 w-8 overflow-hidden rounded-full border-2 border-solid border-black sm:flex">
+                <div className="hidden h-8 w-8 overflow-hidden rounded-full border border-solid border-gray-300 sm:flex">
                   <Image src="/images/fisioluxury/logo.jpg" alt="" width={32} height={32} />
                 </div>
                 <span className="text-xs text-black sm:text-sm">Fisioluxury</span>

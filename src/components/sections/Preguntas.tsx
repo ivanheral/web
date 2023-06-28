@@ -41,7 +41,7 @@ export default function Preguntas({ name }) {
   return (
     <div className="test3 relative min-h-screen w-full">
       <div className="preguntas absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 p-6 md:w-auto md:p-0">
-        <div className="max-w-6xl grid-cols-4 gap-4 bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
+        <div className="max-w-7xl grid-cols-4 gap-4 bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
           <div className="col-span-4 block">
             <p className="mb-2 font-semibold text-gray-900">¿Trabajáis con mutuas?</p>
             <p className="text-gray-700">

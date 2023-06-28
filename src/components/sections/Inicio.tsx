@@ -49,7 +49,7 @@ export default function Inicio({ name }) {
   return (
     <div className="test3 relative h-screen w-full">
       <div className="inicio absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 p-6 md:w-auto md:p-0">
-        <div className="max-w-6xl bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
+        <div className="max-w-7xl bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
           <span className="part0 mb-6 block">
             ¨FisioLuxury, porque la fisioterapia de calidad a domicilio es un lujo¨
           </span>

@@ -68,7 +68,7 @@ export default function Contacto({ name }) {
   return (
     <div className="test2">
       <div id={name} className="flex h-screen items-center justify-center">
-        <div className="contact flex w-full flex-col rounded-md bg-white pb-4 text-xs sm:text-base md:max-w-xl md:shadow-lg">
+        <div className="contact m-4 flex w-full flex-col rounded-md bg-white pb-4 text-xs sm:text-base md:max-w-xl md:shadow-lg">
           <div className="block w-full p-4 pb-0 md:pb-4">
             Puedes ponerte en contacto con nosotros para cualquier consulta a través de:
           </div>
