@@ -21,7 +21,9 @@ export function Footer() {
             {icons.map((Icon, i) => {
               return (
                 <Activelink key={i} href={Icon.url} className="text-gray-500 hover:text-gray-900">
-                  <Icon.icon />
+                  <a>
+                    <Icon.icon />
+                  </a>
                 </Activelink>
               )
             })}
