@@ -24,7 +24,7 @@ export default function Polygon() {
   }, [])
 
   return (
-    <div className="test w-full" id="example">
+    <div className="w-full" id="example">
       <div id="inicio2" className="flex h-screen items-center justify-center overflow-hidden bg-white">
         <div>TEST</div>
       </div>

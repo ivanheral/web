@@ -15,7 +15,7 @@ const NavBar = () => {
     <>
       <div className="shadow-gray fixed inset-x-0 top-0 z-50 bg-white p-0 shadow-md">
         <div className="flex items-center justify-between border-b-2 border-gray-100 px-2 sm:px-4 md:space-x-10">
-          <div className="my-2 flex justify-start lg:w-0 lg:flex-1">
+          <div className="my-4 flex justify-start lg:w-0 lg:flex-1">
             <Activelink href="/" className="flex items-center justify-between space-x-2">
               <a>
                 <div className="flex h-auto w-16 overflow-hidden rounded-full md:w-32">

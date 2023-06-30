@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Image from 'next/legacy/image'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 export default function Inicio({ name }) {
@@ -47,9 +48,22 @@ export default function Inicio({ name }) {
   }, [])
 
   return (
-    <div className="test3 relative h-screen w-full">
-      <div className="inicio absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 p-6 md:w-auto md:p-0">
+    <div className="relative flex min-h-screen w-full items-center justify-center">
+      <div className="inicio relative z-10 w-full p-6 md:w-auto">
         <div className="max-w-7xl bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
+          <div className="m-0 my-8 flex w-full justify-center">
+            <div className="grid grid-cols-3 gap-4 md:w-1/2">
+              <div className="flex items-center overflow-hidden rounded-full border border-solid border-gray-400">
+                <Image src="/images/fisioluxury/nature.jpg" alt="" width={445} height={445} />
+              </div>
+              <div className="flex items-center overflow-hidden rounded-full border border-solid border-gray-400">
+                <Image src="/images/fisioluxury/qimg.jpeg" alt="" width={445} height={445} />
+              </div>
+              <div className="flex items-center overflow-hidden rounded-full border border-solid border-gray-400">
+                <Image src="/images/fisioluxury/lepka.jpg" alt="" width={445} height={445} />
+              </div>
+            </div>
+          </div>
           <span className="part0 mb-6 block">
             ¨FisioLuxury, porque la fisioterapia de calidad a domicilio es un lujo¨
           </span>
@@ -67,7 +81,7 @@ export default function Inicio({ name }) {
           <span className="part3 mb-6 block">¨En Fisioluxury te tratamos en serio, y no en serie¨</span>
         </div>
       </div>
-      <div id={name} className="z-10 flex h-screen items-center justify-center bg-bluedark"></div>
+      <div id={name} className="absolute inset-0 flex h-screen items-center justify-center bg-bluedark"></div>
     </div>
   )
 }

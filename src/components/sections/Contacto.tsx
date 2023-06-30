@@ -66,19 +66,25 @@ export default function Contacto({ name }) {
   }
 
   return (
-    <div className="test2">
+    <div className="test">
       <div id={name} className="flex h-screen items-center justify-center">
         <div className="contact m-4 flex w-full flex-col rounded-md bg-white pb-4 text-xs sm:text-base md:max-w-xl md:shadow-lg">
           <div className="block w-full p-4 pb-0 md:pb-4">
             Puedes ponerte en contacto con nosotros para cualquier consulta a través de:
           </div>
           <div className="m-4 grid gap-2 md:grid-cols-6">
-            <Button href="tel:34687130067" text="+34 687130067" className="md:col-span-2"></Button>
-            <Button
-              className="md:col-span-4"
+            <a
+              href="tel:34687130067"
+              className="w-full rounded bg-bluedark py-2 text-center text-xs uppercase text-white sm:text-base md:col-span-2"
+            >
+              +34 687130067
+            </a>
+            <a
+              className="w-full rounded bg-bluedark py-2 text-center text-xs uppercase text-white sm:text-base md:col-span-4"
               href="mailto:fisioluxurypozuelo@gmail.com"
-              text="fisioluxurypozuelo@gmail.com"
-            ></Button>
+            >
+              fisioluxurypozuelo@gmail.com
+            </a>
           </div>
           <Form handle={handleForm} submit={submitHandle} {...config}>
             <Button text="contactar" disabled={!form?.isValid} />

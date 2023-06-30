@@ -8,7 +8,7 @@ export default function Preguntas({ name }) {
     gsap.set('.preguntas', { opacity: 0, y: 60 })
     gsap.to('.preguntas', {
       scrollTrigger: {
-        trigger: '#preguntas',
+        trigger: '#questions',
         start: 'top center',
         markers: false,
         scrub: false,
@@ -18,11 +18,11 @@ export default function Preguntas({ name }) {
       duration: 1,
     })
 
-    gsap.set(`#preguntas`, {
+    gsap.set(`#questions`, {
       clipPath: 'polygon(-25% 0%, 100% 0%, 100% 100%, 0 100%)',
     })
 
-    gsap.to(`#preguntas`, {
+    gsap.to(`#questions`, {
       clipPath: 'polygon(50% 0%, 100% 0%, 50% 100%, 0 100%)',
       duration: 1.5,
     })
@@ -30,17 +30,17 @@ export default function Preguntas({ name }) {
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: '#preguntas',
+          trigger: '#questions',
           start: 'center center',
           scrub: true,
         },
       })
-      .to(`#preguntas`, { clipPath: 'polygon(-125% 0%, 100% 0%, 200% 100%, 0 100%)' })
+      .to(`#questions`, { clipPath: 'polygon(-125% 0%, 100% 0%, 200% 100%, 0 100%)' })
   }, [])
 
   return (
-    <div className="test3 relative min-h-screen w-full">
-      <div className="preguntas absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 p-6 md:w-auto md:p-0">
+    <div id="preguntas" className="relative flex min-h-screen w-full items-center justify-center">
+      <div className="preguntas relative z-10 w-full p-6 md:w-auto">
         <div className="max-w-7xl grid-cols-4 gap-4 bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
           <div className="col-span-4 block">
             <p className="mb-2 font-semibold text-gray-900">¿Trabajáis con mutuas?</p>
@@ -91,7 +91,7 @@ export default function Preguntas({ name }) {
           </div>
         </div>
       </div>
-      <div id={name} className="z-10 flex h-screen items-center justify-center bg-bluedark"></div>
+      <div id={name} className="absolute inset-0 flex h-screen items-center justify-center bg-bluedark"></div>
     </div>
   )
 }

@@ -20,7 +20,11 @@ export function Footer() {
           <div className="flex justify-center space-x-4 sm:space-x-6">
             {icons.map((Icon, i) => {
               return (
-                <Activelink key={i} href={Icon.url} className="text-gray-500 hover:text-gray-900">
+                <Activelink
+                  key={i}
+                  href={Icon.url}
+                  className="flex rounded-full border border-solid border-gray-400 p-1.5 text-gray-500 hover:text-gray-900"
+                >
                   <a>
                     <Icon.icon />
                   </a>

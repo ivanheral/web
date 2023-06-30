@@ -6,7 +6,7 @@ export default function Tarifas({ name }) {
     { title: 'Sesión fisioterapia', price: '90 €', time: '1h' },
     { title: 'Sesión Fisioterapia', price: '120 €', time: '1h 30min' },
     { title: 'Bono 5 sesiones', price: '400 €', time: '1h' },
-    { title: 'Bono sesiones', price: '550 €', time: '1h 30 min' },
+    { title: 'Bono 5 sesiones', price: '550 €', time: '1h 30 min' },
     { title: 'Sesión fin de semana', price: '120 €', time: '1h' },
     { title: 'Sesión fin de semana', price: '150 €', time: '1h 30 min' },
   ]
@@ -36,7 +36,7 @@ export default function Tarifas({ name }) {
   }, [tarifas.length])
 
   return (
-    <div id={name} className="test4 flex min-h-screen w-full items-center justify-center p-4 py-16">
+    <div id={name} className="flex min-h-screen w-full items-center justify-center bg-bluedark p-4 py-16">
       <div className="grid max-w-7xl grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
         {tarifas.map((e, i) => {
           return (

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Image from 'next/legacy/image'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 export default function Servicios({ name }) {
@@ -59,8 +60,8 @@ export default function Servicios({ name }) {
   }, [])
 
   return (
-    <div className="test relative h-screen w-full">
-      <div className="inicio absolute left-1/2 top-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 p-6 md:w-auto md:p-0">
+    <div className="relative flex min-h-screen w-full items-center justify-center">
+      <div className="servicio relative z-10 w-full p-6 md:w-auto">
         <div className="servicio max-w-7xl bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
           <span className="parts0 mb-6 block">
             La principal característica que diferencia a nuestros fisioterapeutas es la visión integral que tenemos del
@@ -74,13 +75,26 @@ export default function Servicios({ name }) {
             un dolor lumbar (dolor de espalda baja) o tratando el sacro para prevenir una cervicalgia (dolor en el
             cuello).
           </span>
+          <div className="m-0 my-8 flex w-full justify-center">
+            <div className="grid grid-cols-3 gap-4 md:w-1/2">
+              <div className="flex items-center overflow-hidden rounded-full border border-solid border-gray-400">
+                <Image src="/images/fisioluxury/fascia.png" alt="" width={445} height={445} />
+              </div>
+              <div className="flex items-center overflow-hidden rounded-full border border-solid border-gray-400">
+                <Image src="/images/fisioluxury/naranja.jpg" alt="" width={445} height={445} />
+              </div>
+              <div className="flex items-center overflow-hidden rounded-full border border-solid border-gray-400">
+                <Image src="/images/fisioluxury/411.jpg" alt="" width={445} height={445} />
+              </div>
+            </div>
+          </div>
           <span className="parts0 mb-6 block">
             En la primera sesión se realizará una anamnesis (breve entrevista) para realizar una historia clínica que
             nos lleve al origen de tu dolor y así poder resolverlo con un correcto diagnóstico y seguimiento.
           </span>
         </div>
       </div>
-      <div id={name} className="z-10 flex h-screen items-center justify-center bg-bluedark"></div>
+      <div id={name} className="absolute inset-0 flex h-screen items-center justify-center bg-bluedark"></div>
     </div>
   )
 }

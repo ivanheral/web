@@ -16,7 +16,7 @@ export default function Index() {
       <Inicio name="inicio" />
       <Servicios name="servicios" />
       <Tarifas name="tarifas" />
-      <Preguntas name="preguntas" />
+      <Preguntas name="questions" />
       <Contacto name="contacto" />
       {/*<Square /><Coffee /><Polygon />*/}
     </Layout>
