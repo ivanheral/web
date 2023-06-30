@@ -73,18 +73,12 @@ export default function Contacto({ name }) {
             Puedes ponerte en contacto con nosotros para cualquier consulta a través de:
           </div>
           <div className="m-4 grid gap-2 md:grid-cols-6">
-            <a
-              className="w-full cursor-pointer rounded bg-gray-700 p-2 text-center font-semibold text-white hover:bg-gray-800 hover:shadow-xl md:col-span-2"
-              href="tel:34687130067"
-            >
-              +34 687130067
-            </a>
-            <a
-              className="w-full cursor-pointer rounded bg-gray-700 p-2 text-center font-semibold text-white hover:bg-gray-800 hover:shadow-xl md:col-span-4"
+            <Button href="tel:34687130067" text="+34 687130067" className="md:col-span-2"></Button>
+            <Button
+              className="md:col-span-4"
               href="mailto:fisioluxurypozuelo@gmail.com"
-            >
-              fisioluxurypozuelo@gmail.com
-            </a>
+              text="fisioluxurypozuelo@gmail.com"
+            ></Button>
           </div>
           <Form handle={handleForm} submit={submitHandle} {...config}>
             <Button text="contactar" disabled={!form?.isValid} />

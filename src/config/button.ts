@@ -2,8 +2,8 @@ import { ThemesButtonTemplate } from '../interfaces/theme'
 
 const ThemesButton: ThemesButtonTemplate = {
   default: {
-    style: 'w-full rounded bg-gray-700 py-2 font-semibold text-white text-xs sm:text-base',
-    state: 'disabled:bg-gray-400',
+    style: 'w-full rounded bg-bluedark py-2 text-white text-xs sm:text-base uppercase',
+    state: 'disabled:bg-bluelight',
   },
 }
 

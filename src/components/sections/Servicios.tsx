@@ -80,7 +80,7 @@ export default function Servicios({ name }) {
           </span>
         </div>
       </div>
-      <div id={name} className="z-10 flex h-screen items-center justify-center bg-white"></div>
+      <div id={name} className="z-10 flex h-screen items-center justify-center bg-bluedark"></div>
     </div>
   )
 }

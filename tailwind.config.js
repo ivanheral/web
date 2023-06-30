@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       colors: {
         kenji: 'rgba(181,54,14,1)',
+        bluelight: 'rgba(225,191,77,0.8)',
+        bluedark: 'rgba(225,191,77,1)',
       },
       maxWidth: {
         '7xl': '1600px',

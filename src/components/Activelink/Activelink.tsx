@@ -13,7 +13,7 @@ const Activelink = ({ children, activeClassName, className, href, ...rest }: Act
   const router = useRouter()
   const childClassName = className ?? ''
   const newClassName = `cursor-pointer ${childClassName} ${
-    router.pathname == href ? (activeClassName ? activeClassName : 'text-gray-900') : ''
+    router.pathname == href ? (activeClassName ? activeClassName : 'text-black') : ''
   }`
   return (
     <Link legacyBehavior href={href} passHref>

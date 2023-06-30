@@ -67,7 +67,7 @@ export default function Inicio({ name }) {
           <span className="part3 mb-6 block">¨En Fisioluxury te tratamos en serio, y no en serie¨</span>
         </div>
       </div>
-      <div id={name} className="z-10 flex h-screen items-center justify-center bg-white"></div>
+      <div id={name} className="z-10 flex h-screen items-center justify-center bg-bluedark"></div>
     </div>
   )
 }
