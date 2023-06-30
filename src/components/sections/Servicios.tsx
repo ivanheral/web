@@ -61,7 +61,7 @@ export default function Servicios({ name }) {
 
   return (
     <div className="relative flex min-h-screen w-full items-center justify-center">
-      <div className="servicio relative z-10 w-full p-6 md:w-auto">
+      <div className="servicio relative z-10 w-full p-6 py-16 md:w-auto">
         <div className="servicio max-w-7xl bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
           <span className="parts0 mb-6 block">
             La principal característica que diferencia a nuestros fisioterapeutas es la visión integral que tenemos del

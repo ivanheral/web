@@ -8,7 +8,7 @@ const Document = () => {
       <Head>
         <Favicon></Favicon>
       </Head>
-      <body>
+      <body className="select-none">
         <Main />
         <NextScript />
       </body>

@@ -19,12 +19,7 @@ export default function Preguntas({ name }) {
     })
 
     gsap.set(`#questions`, {
-      clipPath: 'polygon(-25% 0%, 100% 0%, 100% 100%, 0 100%)',
-    })
-
-    gsap.to(`#questions`, {
-      clipPath: 'polygon(50% 0%, 100% 0%, 50% 100%, 0 100%)',
-      duration: 1.5,
+      clipPath: 'polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%)',
     })
 
     gsap
@@ -35,12 +30,12 @@ export default function Preguntas({ name }) {
           scrub: true,
         },
       })
-      .to(`#questions`, { clipPath: 'polygon(-125% 0%, 100% 0%, 200% 100%, 0 100%)' })
+      .to(`#questions`, { clipPath: 'polygon(-150% 0%, 250% 0%, 200% 100%, -150% 100%)' })
   }, [])
 
   return (
     <div id="preguntas" className="relative flex min-h-screen w-full items-center justify-center">
-      <div className="preguntas relative z-10 w-full p-6 md:w-auto">
+      <div className="preguntas relative z-10 w-full p-6 py-16 md:w-auto">
         <div className="max-w-7xl grid-cols-4 gap-4 bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
           <div className="col-span-4 block">
             <p className="mb-2 font-semibold text-gray-900">¿Trabajáis con mutuas?</p>

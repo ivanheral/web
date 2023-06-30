@@ -20,11 +20,11 @@ export default function Inicio({ name }) {
     })
 
     gsap.set(`#inicio`, {
-      clipPath: 'polygon(-25% 0%, 100% 0%, 100% 100%, 0 100%)',
+      clipPath: 'polygon(-50% 0%, 150% 0%, 100% 100%, -50% 100%)',
     })
 
     gsap.to(`#inicio`, {
-      clipPath: 'polygon(50% 0%, 100% 0%, 50% 100%, 0 100%)',
+      clipPath: 'polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%)',
       duration: 1.5,
     })
 
@@ -34,7 +34,7 @@ export default function Inicio({ name }) {
           scrub: true,
         },
       })
-      .to(`#inicio`, { clipPath: 'polygon(-125% 0%, 100% 0%, 200% 100%, 0 100%)' })
+      .to(`#inicio`, { clipPath: 'polygon(-150% 0%, 250% 0%, 200% 100%, -150% 100%)' })
 
     for (let i = 0; i < 4; i++) {
       gsap.set('.part' + i, { opacity: 0, y: 60 })
@@ -49,7 +49,7 @@ export default function Inicio({ name }) {
 
   return (
     <div className="relative flex min-h-screen w-full items-center justify-center">
-      <div className="inicio relative z-10 w-full p-6 md:w-auto">
+      <div className="inicio relative z-10 w-full p-6 py-16 md:w-auto">
         <div className="max-w-7xl bg-white p-4 text-center text-xs text-gray-500 shadow-lg sm:text-base">
           <div className="m-0 my-8 flex w-full justify-center">
             <div className="grid grid-cols-3 gap-4 md:w-1/2">
